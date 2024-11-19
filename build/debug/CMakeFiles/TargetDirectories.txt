@@ -1,0 +1,3 @@
+D:/CSC109/CH11/SHOPPING/build/debug/CMakeFiles/CH11SHOPPINGBAG.dir
+D:/CSC109/CH11/SHOPPING/build/debug/CMakeFiles/edit_cache.dir
+D:/CSC109/CH11/SHOPPING/build/debug/CMakeFiles/rebuild_cache.dir

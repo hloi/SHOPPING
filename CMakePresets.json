@@ -1,0 +1,68 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 17,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "default",
+        "hidden": true,
+        "generator": "MinGW Makefiles",
+        "binaryDir": "${sourceDir}/build/${presetName}",
+        "cacheVariables": {
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+        }
+      },
+      {
+        "name": "debug",
+        "inherits": "default",
+        "description": "Configure the project for Debug with MinGW",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      },
+      {
+        "name": "release",
+        "inherits": "default",
+        "description": "Configure the project for Release with MinGW",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release"
+        }
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "debug",
+        "configurePreset": "debug",
+        "description": "Build Debug configuration",
+        "jobs": 4
+      },
+      {
+        "name": "release",
+        "configurePreset": "release",
+        "description": "Build Release configuration",
+        "jobs": 4
+      }
+    ],
+    "testPresets": [
+      {
+        "name": "run-tests-debug",
+        "configurePreset": "debug",
+        "description": "Run CxxTests in Debug mode",
+        "output": {
+          "outputOnFailure": true
+        }
+      },
+      {
+        "name": "run-tests-release",
+        "configurePreset": "release",
+        "description": "Run CxxTests in Release mode",
+        "output": {
+          "outputOnFailure": true
+        }
+      }
+    ]
+  }
+  

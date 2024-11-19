@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/CSC109/CH11/SHOPPING/build/debug",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe   -g -std=gnu++17 -o CMakeFiles\\CH11SHOPPINGBAG.dir\\main.cpp.obj -c D:\\CSC109\\CH11\\SHOPPING\\main.cpp",
+  "file": "D:/CSC109/CH11/SHOPPING/main.cpp",
+  "output": "CMakeFiles/CH11SHOPPINGBAG.dir/main.cpp.obj"
+}
+]
